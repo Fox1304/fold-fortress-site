@@ -1,0 +1,257 @@
+/* Fold Fortress website (marketing and support pages), in the game's colours and fonts. */
+:root {
+  --ink: #1b1b2f;
+  --navy: #141a3c;
+  --navy-hi: #2a3a7a;
+  --gold: #ffc83d;
+  --gold-dark: #c98a12;
+  --royal-blue: #2f6bff;
+  --snow: #ffffff;
+  --mist: #c9d4ff;
+  --display: 'Lilita One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+  --body: 'Nunito', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--navy);
+}
+
+body {
+  margin: 0;
+  color: var(--snow);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.55;
+  background: radial-gradient(ellipse at top, #24306a 0%, var(--navy) 60%);
+}
+
+a {
+  color: var(--gold);
+}
+
+.wrap {
+  width: min(100% - 32px, 1040px);
+  margin-inline: auto;
+}
+
+header.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+}
+
+header.top .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--snow);
+  font-family: var(--display);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header.top .brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+}
+
+header.top nav a {
+  margin-left: 18px;
+  color: var(--mist);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header.top nav a:hover {
+  color: var(--gold);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  color: var(--gold);
+  font-size: clamp(44px, 8vw, 76px);
+  text-shadow: 0 4px 0 var(--ink);
+}
+
+h2 {
+  color: var(--gold);
+  font-size: clamp(30px, 5vw, 42px);
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 40px;
+  padding: 36px 0 56px;
+}
+
+.hero .icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 27px;
+  border: 3px solid var(--ink);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.hero .lede {
+  font-size: 22px;
+  color: var(--mist);
+}
+
+.hero .phone {
+  justify-self: center;
+  width: min(100%, 320px);
+  border-radius: 30px;
+  border: 4px solid var(--ink);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 22px;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffe08a, var(--gold) 45%, var(--gold-dark));
+  box-shadow: 0 4px 0 var(--ink);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.note {
+  color: var(--mist);
+  font-size: 15px;
+}
+
+section.band {
+  padding: 48px 0;
+  border-top: 2px solid rgba(255, 200, 61, 0.25);
+}
+
+.combos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.combos li {
+  padding: 12px 16px;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(42, 58, 122, 0.92), rgba(17, 23, 54, 0.92));
+  box-shadow: inset 0 0 0 1.5px rgba(233, 185, 73, 0.55);
+}
+
+.combos b {
+  display: block;
+  color: var(--gold);
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.shots img {
+  width: 100%;
+  border-radius: 18px;
+  border: 3px solid var(--ink);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 22px 24px;
+  border: 2px solid var(--ink);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(42, 58, 122, 0.92), rgba(17, 23, 54, 0.92));
+  box-shadow:
+    inset 0 0 0 1.5px rgba(233, 185, 73, 0.55),
+    0 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+main.page .card h2 {
+  color: var(--snow);
+  font-size: 24px;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+main.page {
+  padding: 24px 0 56px;
+}
+
+main.page .card {
+  margin-bottom: 20px;
+}
+
+.mail {
+  font-size: 22px;
+  font-weight: 800;
+  word-break: break-all;
+}
+
+footer {
+  padding: 28px 0 40px;
+  border-top: 2px solid rgba(255, 200, 61, 0.25);
+  color: var(--mist);
+  font-size: 15px;
+}
+
+footer a {
+  margin-right: 18px;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 16px;
+  }
+
+  header.top nav a {
+    margin-left: 12px;
+  }
+
+  header.top .brand span {
+    display: none;
+  }
+}
