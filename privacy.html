@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy — Fold Fortress</title>
-<meta name="description" content="How Fold Fortress handles your data: no account, progress kept on your device, and the planned AdMob ads.">
+<meta name="description" content="How Fold Fortress handles your data: no account, progress kept on your device, and what the ad, analytics and purchase services receive.">
 <meta name="theme-color" content="#14204a">
 <style>
   :root {
@@ -47,19 +47,57 @@
 <main>
   <p class="eyebrow">Privacy</p>
   <h1>Fold Fortress and your privacy</h1>
-  <p class="updated">Last updated 28 October 2026</p>
+  <p class="updated">Last updated 12 November 2026</p>
 
   <div class="panel">
-    <p><strong>The short version.</strong> The current version of Fold Fortress: Card Defense does not collect, store or transmit any
-      personal data. There is no account, no analytics, no crash reporting, no advertising, no advertising
-      identifier and no third-party SDK that sends data anywhere. A coming version will show ads through Google
-      AdMob; what that collects is described below.</p>
+    <p><strong>The short version.</strong> Fold Fortress: Card Defense has no account and never asks for your name or
+      email. To show ads, count how the game is played, find crashes and handle purchases, it uses services from
+      Google (AdMob, Firebase) and RevenueCat. They receive an advertising or app identifier, your approximate
+      location (from your IP address), how you play and use ads, crash and performance data, and your purchase
+      history. Where the law requires it, nothing is collected until you agree, and you can change your choice in
+      Settings.</p>
   </div>
 
-  <h2>What is collected</h2>
-  <p>In the current version, nothing: not your name, not your email, not an anonymous identifier, not your
-    location, and not usage statistics. The Google Play data safety section already describes the data the
-    planned AdMob ads will collect and share, so it stays accurate when they ship.</p>
+  <h2>What is collected, by whom and why</h2>
+  <p>The game itself never asks for your name, email, contacts, photos or precise location. The services below
+    are built into the versions of the game that show ads and sell in-app purchases.</p>
+  <ul>
+    <li><strong>Google AdMob (ads).</strong> Your device's advertising identifier (on iPhone only if you allow
+      tracking), your approximate location derived from your IP address, how you interact with ads and the app, and
+      diagnostic data. It is used to show and measure ads, for analytics and to prevent fraud, under
+      <a href="https://policies.google.com/privacy">Google's privacy policy</a> and
+      <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>.</li>
+    <li><strong>Google Firebase Analytics (how the game is played).</strong> An app-instance identifier, your
+      approximate location, the game's own events (runs, battles, purchases, ads watched; never your name or
+      contacts), and your device model, operating system and language.</li>
+    <li><strong>Firebase Crashlytics (crash reports).</strong> Crash traces, the state of the device at the time
+      and an installation identifier, kept for 90 days.</li>
+    <li><strong>Firebase Remote Config (game settings changed without an update).</strong> An installation
+      identifier, the app version, your country and language.</li>
+    <li><strong>RevenueCat (purchases).</strong> Store receipts, your purchase history in the game and an anonymous
+      app user identifier, under <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.
+      Payments themselves are handled by Apple or Google, which never share your card details with me.</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Where the law requires it (the European Economic Area, the United Kingdom, Switzerland and US states with
+      privacy laws), the game shows a consent form before any of this starts. You can reopen it at any time from
+      Settings &gt; Ad privacy options.</li>
+    <li>On iPhone, Apple's tracking prompt decides whether ad partners may use your advertising identifier. The
+      game is the same whatever you answer, and you can change it in the iPhone's Settings &gt; Privacy &amp;
+      Security &gt; Tracking.</li>
+    <li>You can reset or delete your advertising ID at any time in your device settings.</li>
+    <li>You can ask for your data to be deleted: see <a href="delete-data.html">how to delete your data</a>.</li>
+  </ul>
+
+  <h2>US state privacy rights</h2>
+  <p>If you live in a US state with a privacy law, you can tell the game not to sell or share your personal
+    information for advertising: open Settings &gt; Ad privacy options and choose the opt-out.</p>
+
+  <h2>International transfers</h2>
+  <p>Google and RevenueCat process data in the United States and in other countries, under their standard
+    contractual clauses.</p>
 
   <h2>Where your progress lives</h2>
   <ul>
@@ -69,23 +107,15 @@
     <li>Deleting the app deletes the local data.</li>
   </ul>
 
-  <h2>Purchases and ads</h2>
-  <p>The current version has no in-app purchases and shows no ads yet. Ads are planned: a coming version will show
-    ads through Google AdMob. When it does, the AdMob SDK will collect and share with Google your device's
-    advertising identifier, your approximate location (derived from your IP address), how you interact with ads and
-    the app, and crash and diagnostic data, to show and measure ads, for analytics and to prevent fraud. This is
-    handled by Google under <a href="https://policies.google.com/privacy">Google's privacy policy</a> and
-    <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>.
-    You can reset or delete your advertising ID at any time in your device settings. The Google Play data safety
-    section already lists this data.</p>
-
   <h2>Children</h2>
-  <p>Fold Fortress is meant for players aged 13 and over and is not directed to children. It collects no data
-    from anyone, children included.</p>
+  <p>Fold Fortress is meant for players aged 13 and over and is not directed to children.</p>
 
   <h2>Your rights</h2>
-  <p>Rights of access, correction, deletion and portability apply to data a company holds about you. I hold
-    none. If you would like confirmation of that in writing, ask and I will provide it.</p>
+  <p>Depending on where you live, you have rights of access, correction, deletion and portability over data held
+    about you. The game has no account, so the data above is tied to device and app identifiers, not to your name.
+    To exercise a right, write to the address below; <a href="delete-data.html">how to delete your data</a>
+    explains what I can find and delete, and what you can remove yourself. You can also contact Google or
+    RevenueCat directly under their own policies.</p>
 
   <h2>This page</h2>
   <p>This page is a static file hosted on GitHub Pages. It sets no cookie and runs no analytics. GitHub keeps
