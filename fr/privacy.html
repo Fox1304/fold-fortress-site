@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confidentialité — Fold Fortress</title>
+<meta name="description" content="Comment Fold Fortress traite vos données : pas de compte, progression gardée sur votre appareil, et ce que reçoivent les services de publicité, de statistiques et d'achats.">
+<meta name="theme-color" content="#14204a">
+<style>
+  :root {
+    --bg: #f6f3ea;
+    --ink: #1b2240;
+    --soft: #4d5577;
+    --panel: #ffffff;
+    --line: #dcd6c6;
+    --accent: #2f6bff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10172f;
+      --ink: #eef1fb;
+      --soft: #aab3d4;
+      --panel: #18213f;
+      --line: #2a3560;
+      --accent: #7fa3ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  .eyebrow { margin: 0; color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+  h1 { margin: 6px 0 0; font-size: 32px; line-height: 1.2; }
+  h2 { margin: 36px 0 8px; font-size: 20px; }
+  .updated { color: var(--soft); margin-top: 10px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-top: 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; color: var(--soft); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Confidentialité · <a href="../privacy.html" hreflang="en" lang="en">English</a></p>
+  <h1>Fold Fortress et votre vie privée</h1>
+  <p class="updated">Mise à jour le 17 novembre 2026</p>
+
+  <div class="panel">
+    <p><strong>En bref.</strong> Fold Fortress: Card Defense n'a pas de compte et ne vous demande jamais votre nom ni
+      votre e-mail. Pour afficher des publicités, mesurer comment le jeu est joué, trouver les plantages et gérer les
+      achats, il utilise des services de Google (AdMob, Firebase) et de RevenueCat. Ils reçoivent un identifiant
+      publicitaire ou d'application, votre position approximative (déduite de votre adresse IP), votre façon de jouer
+      et d'utiliser les publicités, des données de plantage et de performance, et votre historique d'achats. Là où la
+      loi l'exige, rien n'est collecté avant votre accord, et vous pouvez changer d'avis dans les Réglages.</p>
+  </div>
+
+  <h2>Qui est responsable</h2>
+  <p>Le responsable du traitement est Thomas Sobstyl, développeur indépendant en France publiant sous le nom
+    FoxTaming, qui crée Fold Fortress: Card Defense. Contact : <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>. Google (AdMob, Firebase) et RevenueCat traitent
+    des données pour le jeu en tant que sous-traitants ou, pour certains usages publicitaires, en tant que
+    responsables indépendants, selon leurs propres politiques citées ci-dessous.</p>
+
+  <h2>Ce qui est collecté, par qui et pourquoi</h2>
+  <p>Le jeu lui-même ne demande jamais votre nom, votre e-mail, vos contacts, vos photos ni votre position précise.
+    Les services ci-dessous sont intégrés aux versions du jeu qui affichent des publicités et vendent des achats
+    intégrés.</p>
+  <ul>
+    <li><strong>Google AdMob (publicités).</strong> L'identifiant publicitaire de votre appareil (sur iPhone,
+      seulement si vous autorisez le suivi), votre position approximative déduite de votre adresse IP, vos
+      interactions avec les publicités et l'application, et des données de diagnostic. Elles servent à afficher et
+      mesurer les publicités, aux statistiques et à la prévention de la fraude, selon les
+      <a href="https://policies.google.com/privacy?hl=fr">règles de confidentialité de Google</a> et
+      <a href="https://policies.google.com/technologies/partner-sites?hl=fr">l'utilisation par Google des données
+      des applications partenaires</a>.</li>
+    <li><strong>Google Firebase Analytics (comment le jeu est joué).</strong> Un identifiant d'instance
+      d'application, votre position approximative, les événements du jeu (parties, batailles, achats, publicités
+      regardées ; jamais votre nom ni vos contacts), ainsi que le modèle de votre appareil, son système et sa
+      langue.</li>
+    <li><strong>Firebase Crashlytics (rapports de plantage).</strong> Les traces de plantage, l'état de l'appareil
+      à ce moment et un identifiant d'installation, gardés 90 jours.</li>
+    <li><strong>Firebase Remote Config (réglages du jeu modifiés sans mise à jour).</strong> Un identifiant
+      d'installation, la version de l'application, votre pays et votre langue.</li>
+    <li><strong>RevenueCat (achats).</strong> Les reçus des stores, votre historique d'achats dans le jeu et un
+      identifiant d'utilisateur anonyme, selon la
+      <a href="https://www.revenuecat.com/privacy">politique de confidentialité de RevenueCat</a>. Les paiements
+      eux-mêmes sont gérés par Apple ou Google, qui ne me transmettent jamais vos données de carte.</li>
+  </ul>
+
+  <h2>Bases légales</h2>
+  <ul>
+    <li><strong>Consentement</strong> pour les publicités utilisant vos données, Firebase Analytics et Crashlytics.
+      Dans l'Espace économique européen, au Royaume-Uni et en Suisse, ils ne démarrent qu'après votre accord dans le
+      formulaire de consentement, et vous pouvez le retirer à tout moment dans Réglages &gt; Options de
+      confidentialité des pubs ; le retrait ne remet pas en cause ce qui a eu lieu avant.</li>
+    <li><strong>Exécution d'un contrat</strong> pour les achats intégrés : le reçu et l'historique d'achats servent
+      à vous livrer ce que vous avez acheté et à le restaurer.</li>
+    <li><strong>Intérêt légitime</strong> pour Remote Config (faire fonctionner et ajuster le jeu sans mise à jour)
+      et pour la prévention de la fraude.</li>
+    <li><strong>Obligation légale</strong> pour les documents comptables et fiscaux des ventes.</li>
+  </ul>
+
+  <h2>Durées de conservation</h2>
+  <ul>
+    <li>Événements Firebase Analytics : 14 mois, puis supprimés automatiquement.</li>
+    <li>Rapports de plantage Crashlytics : 90 jours.</li>
+    <li>Historique d'achats chez RevenueCat : tant que le jeu est proposé, ou jusqu'à votre demande de
+      suppression.</li>
+    <li>Documents comptables et fiscaux : la durée exigée par la loi française (jusqu'à 10 ans), sans lien avec
+      votre façon de jouer.</li>
+    <li>Données publicitaires : selon les
+      <a href="https://policies.google.com/technologies/retention?hl=fr">règles de conservation de Google</a>.</li>
+    <li>Votre partie sauvegardée : sur votre appareil, jusqu'à la suppression de l'application.</li>
+  </ul>
+
+  <h2>Vos choix</h2>
+  <ul>
+    <li>Là où la loi l'exige (Espace économique européen, Royaume-Uni, Suisse et États américains dotés d'une loi
+      sur la vie privée), le jeu affiche un formulaire de consentement avant que tout cela ne démarre. Vous pouvez le
+      rouvrir à tout moment dans Réglages &gt; Options de confidentialité des pubs.</li>
+    <li>Sur iPhone, la demande de suivi d'Apple décide si les partenaires publicitaires peuvent utiliser votre
+      identifiant publicitaire. Le jeu est le même quelle que soit votre réponse, et vous pouvez la changer dans
+      Réglages &gt; Confidentialité et sécurité &gt; Suivi de l'iPhone.</li>
+    <li>Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire à tout moment dans les réglages de
+      votre appareil.</li>
+    <li>Vous pouvez demander la suppression de vos données : voir <a href="delete-data.html">comment supprimer vos
+      données</a>.</li>
+  </ul>
+
+  <h2>Droits dans les États américains</h2>
+  <p>Si vous vivez dans un État américain doté d'une loi sur la vie privée, vous pouvez demander au jeu de ne pas
+    vendre ni partager vos informations personnelles à des fins publicitaires : ouvrez Réglages &gt; Options de
+    confidentialité des pubs et choisissez le refus.</p>
+
+  <h2>Transferts hors de l'Union européenne</h2>
+  <p>Google et RevenueCat traitent des données aux États-Unis et dans d'autres pays, encadrées par les clauses
+    contractuelles types de la Commission européenne.</p>
+
+  <h2>Où se trouve votre progression</h2>
+  <ul>
+    <li>Votre progression, vos parties, vos collections et vos réglages sont enregistrés dans le stockage privé de
+      l'application sur votre appareil.</li>
+    <li>Sur Android, la sauvegarde système vers votre compte Google peut inclure cette partie si la sauvegarde de
+      l'appareil est activée. Elle est gérée par Google sous votre compte ; je ne peux pas la lire.</li>
+    <li>Supprimer l'application supprime les données locales.</li>
+  </ul>
+
+  <h2>Enfants</h2>
+  <p>Fold Fortress s'adresse aux joueurs de 13 ans et plus et n'est pas destiné aux enfants.</p>
+
+  <h2>Vos droits</h2>
+  <p>Le RGPD et la loi française vous donnent le droit d'accéder à vos données, de les faire rectifier ou effacer,
+    d'en limiter le traitement ou de vous y opposer, à la portabilité, de retirer votre consentement à tout moment, et
+    de donner des directives sur le sort de vos données après votre décès. Le jeu n'a pas de compte : les données
+    ci-dessus sont liées à des identifiants d'appareil et d'application, pas à votre nom. Pour exercer un droit,
+    écrivez à l'adresse ci-dessous ; je réponds sous un mois. <a href="delete-data.html">Comment supprimer vos
+    données</a> explique ce que je peux retrouver et supprimer, et ce que vous pouvez effacer vous-même. Vous pouvez
+    aussi contacter Google ou RevenueCat directement selon leurs propres politiques.</p>
+  <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL
+    (<a href="https://www.cnil.fr/fr/plaintes">www.cnil.fr/fr/plaintes</a>) ou à l'autorité de votre pays de
+    résidence.</p>
+
+  <h2>Cette page</h2>
+  <p>Cette page est un fichier statique hébergé sur GitHub Pages. Elle ne dépose aucun cookie et ne mesure aucune
+    audience. GitHub conserve des journaux de serveur standard en tant qu'hébergeur, selon la
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">déclaration
+    de confidentialité de GitHub</a>.</p>
+
+  <h2>Modifications</h2>
+  <p>Si cette politique change, la version révisée apparaît sur cette page avec une nouvelle date en haut.</p>
+
+  <h2>Contact</h2>
+  <p>Vos questions sur cette politique ou sur Fold Fortress sont les bienvenues à <a href="mailto:thomas.sobstyl@me.com">thomas.sobstyl@me.com</a>.</p>
+  <footer>&copy; 2026 Thomas Sobstyl (FoxTaming). Fold Fortress: Card Defense.</footer>
+</main>
+</body>
+</html>
